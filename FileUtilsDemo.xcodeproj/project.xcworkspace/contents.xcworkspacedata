@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FileUtils.xcodeproj">
+      location = "self:/Users/Sayeed/Desktop/FileUtils/FileUtilsDemo.xcodeproj">
    </FileRef>
 </Workspace>

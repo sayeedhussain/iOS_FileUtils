@@ -13,17 +13,13 @@
 		36157B541E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B511E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift */; };
 		36157B551E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B521E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift */; };
 		36157B561E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B531E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift */; };
-		36157B6D1E5033BB00B56FAB /* FileManager+ActionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */; };
-		36157B6E1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */; };
-		36157B6F1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */; };
 		36157B721E5033D000B56FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B701E5033D000B56FAB /* AppDelegate.swift */; };
 		36157B731E5033D000B56FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B711E5033D000B56FAB /* ViewController.swift */; };
-		36157B741E5033DD00B56FAB /* FileManager+ActionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */; };
-		36157B751E5033DD00B56FAB /* FileManager+DirectoryLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */; };
-		36157B761E5033DD00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */; };
-		36430AD41E56F81300A56EF7 /* FileManager+StorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */; };
 		36430AD61E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD51E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift */; };
-		36430AD71E5700E200A56EF7 /* FileManager+StorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */; };
+		36430ADE1E570B2300A56EF7 /* FileManager+ActionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430ADA1E570B2300A56EF7 /* FileManager+ActionUtilities.swift */; };
+		36430ADF1E570B2300A56EF7 /* FileManager+DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430ADB1E570B2300A56EF7 /* FileManager+DirectoryHelpers.swift */; };
+		36430AE01E570B2300A56EF7 /* FileManager+DirectoryLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430ADC1E570B2300A56EF7 /* FileManager+DirectoryLocations.swift */; };
+		36430AE11E570B2300A56EF7 /* FileManager+StorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430ADD1E570B2300A56EF7 /* FileManager+StorageHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,24 +33,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36157B2D1E502F0100B56FAB /* FileUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36157B2D1E502F0100B56FAB /* FileUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36157B351E502F0100B56FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36157B371E502F0100B56FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36157B3A1E502F0100B56FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36157B3C1E502F0100B56FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36157B411E502F0100B56FAB /* FileUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36157B411E502F0100B56FAB /* FileUtilsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileUtilsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36157B471E502F0100B56FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36157B501E502F9C00B56FAB /* FileUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		36157B511E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ActionUtilities_Tests.swift"; sourceTree = "<group>"; };
 		36157B521E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryLocations_Tests.swift"; sourceTree = "<group>"; };
 		36157B531E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryHelpers_Tests.swift"; sourceTree = "<group>"; };
-		36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+ActionUtilities.swift"; path = "Common/FileManager+ActionUtilities.swift"; sourceTree = "<group>"; };
-		36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+DirectoryLocations.swift"; path = "Common/FileManager+DirectoryLocations.swift"; sourceTree = "<group>"; };
-		36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+DirectoryHelpers.swift"; path = "Common/FileManager+DirectoryHelpers.swift"; sourceTree = "<group>"; };
 		36157B701E5033D000B56FAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36157B711E5033D000B56FAB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+StorageHelpers.swift"; sourceTree = "<group>"; };
 		36430AD51E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+StorageHelpers_Tests.swift"; sourceTree = "<group>"; };
+		36430ADA1E570B2300A56EF7 /* FileManager+ActionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ActionUtilities.swift"; sourceTree = "<group>"; };
+		36430ADB1E570B2300A56EF7 /* FileManager+DirectoryHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryHelpers.swift"; sourceTree = "<group>"; };
+		36430ADC1E570B2300A56EF7 /* FileManager+DirectoryLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryLocations.swift"; sourceTree = "<group>"; };
+		36430ADD1E570B2300A56EF7 /* FileManager+StorageHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+StorageHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +83,8 @@
 		36157B2E1E502F0100B56FAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36157B2D1E502F0100B56FAB /* FileUtils.app */,
-				36157B411E502F0100B56FAB /* FileUtilsTests.xctest */,
+				36157B2D1E502F0100B56FAB /* FileUtilsDemo.app */,
+				36157B411E502F0100B56FAB /* FileUtilsDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,20 +143,29 @@
 		36157B691E50335700B56FAB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */,
-				36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */,
-				36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */,
-				36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */,
+				36430AD91E570B2300A56EF7 /* FileUtils */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		36430AD91E570B2300A56EF7 /* FileUtils */ = {
+			isa = PBXGroup;
+			children = (
+				36430ADA1E570B2300A56EF7 /* FileManager+ActionUtilities.swift */,
+				36430ADB1E570B2300A56EF7 /* FileManager+DirectoryHelpers.swift */,
+				36430ADC1E570B2300A56EF7 /* FileManager+DirectoryLocations.swift */,
+				36430ADD1E570B2300A56EF7 /* FileManager+StorageHelpers.swift */,
+			);
+			name = FileUtils;
+			path = Common/FileUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36157B2C1E502F0100B56FAB /* FileUtils */ = {
+		36157B2C1E502F0100B56FAB /* FileUtilsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36157B4A1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtils" */;
+			buildConfigurationList = 36157B4A1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsDemo" */;
 			buildPhases = (
 				36157B291E502F0100B56FAB /* Sources */,
 				36157B2A1E502F0100B56FAB /* Frameworks */,
@@ -170,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = FileUtils;
+			name = FileUtilsDemo;
 			productName = FileUtils;
-			productReference = 36157B2D1E502F0100B56FAB /* FileUtils.app */;
+			productReference = 36157B2D1E502F0100B56FAB /* FileUtilsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36157B401E502F0100B56FAB /* FileUtilsTests */ = {
+		36157B401E502F0100B56FAB /* FileUtilsDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36157B4D1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsTests" */;
+			buildConfigurationList = 36157B4D1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsDemoTests" */;
 			buildPhases = (
 				36157B3D1E502F0100B56FAB /* Sources */,
 				36157B3E1E502F0100B56FAB /* Frameworks */,
@@ -188,9 +193,9 @@
 			dependencies = (
 				36157B431E502F0100B56FAB /* PBXTargetDependency */,
 			);
-			name = FileUtilsTests;
+			name = FileUtilsDemoTests;
 			productName = FileUtilsTests;
-			productReference = 36157B411E502F0100B56FAB /* FileUtilsTests.xctest */;
+			productReference = 36157B411E502F0100B56FAB /* FileUtilsDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36157B281E502F0100B56FAB /* Build configuration list for PBXProject "FileUtils" */;
+			buildConfigurationList = 36157B281E502F0100B56FAB /* Build configuration list for PBXProject "FileUtilsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36157B2C1E502F0100B56FAB /* FileUtils */,
-				36157B401E502F0100B56FAB /* FileUtilsTests */,
+				36157B2C1E502F0100B56FAB /* FileUtilsDemo */,
+				36157B401E502F0100B56FAB /* FileUtilsDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,11 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36157B731E5033D000B56FAB /* ViewController.swift in Sources */,
+				36430ADE1E570B2300A56EF7 /* FileManager+ActionUtilities.swift in Sources */,
+				36430AE11E570B2300A56EF7 /* FileManager+StorageHelpers.swift in Sources */,
+				36430AE01E570B2300A56EF7 /* FileManager+DirectoryLocations.swift in Sources */,
 				36157B721E5033D000B56FAB /* AppDelegate.swift in Sources */,
-				36430AD41E56F81300A56EF7 /* FileManager+StorageHelpers.swift in Sources */,
-				36157B6D1E5033BB00B56FAB /* FileManager+ActionUtilities.swift in Sources */,
-				36157B6E1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift in Sources */,
-				36157B6F1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */,
+				36430ADF1E570B2300A56EF7 /* FileManager+DirectoryHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36157B741E5033DD00B56FAB /* FileManager+ActionUtilities.swift in Sources */,
 				36157B561E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift in Sources */,
-				36430AD71E5700E200A56EF7 /* FileManager+StorageHelpers.swift in Sources */,
-				36157B751E5033DD00B56FAB /* FileManager+DirectoryLocations.swift in Sources */,
-				36157B761E5033DD00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */,
 				36157B551E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift in Sources */,
 				36157B541E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift in Sources */,
 				36430AD61E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift in Sources */,
@@ -288,7 +289,7 @@
 /* Begin PBXTargetDependency section */
 		36157B431E502F0100B56FAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36157B2C1E502F0100B56FAB /* FileUtils */;
+			target = 36157B2C1E502F0100B56FAB /* FileUtilsDemo */;
 			targetProxy = 36157B421E502F0100B56FAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -441,7 +442,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "FileUtilsTests/FileUtilsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileUtils.app/FileUtils";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileUtilsDemo.app/FileUtilsDemo";
 			};
 			name = Debug;
 		};
@@ -457,14 +458,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FileUtilsTests/FileUtilsTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileUtils.app/FileUtils";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileUtilsDemo.app/FileUtilsDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36157B281E502F0100B56FAB /* Build configuration list for PBXProject "FileUtils" */ = {
+		36157B281E502F0100B56FAB /* Build configuration list for PBXProject "FileUtilsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36157B481E502F0100B56FAB /* Debug */,
@@ -473,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36157B4A1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtils" */ = {
+		36157B4A1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36157B4B1E502F0100B56FAB /* Debug */,
@@ -482,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36157B4D1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsTests" */ = {
+		36157B4D1E502F0100B56FAB /* Build configuration list for PBXNativeTarget "FileUtilsDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36157B4E1E502F0100B56FAB /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36157B2C1E502F0100B56FAB"
-               BuildableName = "FileUtils.app"
-               BlueprintName = "FileUtils"
-               ReferencedContainer = "container:FileUtils.xcodeproj">
+               BuildableName = "FileUtilsDemo.app"
+               BlueprintName = "FileUtilsDemo"
+               ReferencedContainer = "container:FileUtilsDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36157B401E502F0100B56FAB"
-               BuildableName = "FileUtilsTests.xctest"
-               BlueprintName = "FileUtilsTests"
-               ReferencedContainer = "container:FileUtils.xcodeproj">
+               BuildableName = "FileUtilsDemoTests.xctest"
+               BlueprintName = "FileUtilsDemoTests"
+               ReferencedContainer = "container:FileUtilsDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36157B2C1E502F0100B56FAB"
-            BuildableName = "FileUtils.app"
-            BlueprintName = "FileUtils"
-            ReferencedContainer = "container:FileUtils.xcodeproj">
+            BuildableName = "FileUtilsDemo.app"
+            BlueprintName = "FileUtilsDemo"
+            ReferencedContainer = "container:FileUtilsDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36157B2C1E502F0100B56FAB"
-            BuildableName = "FileUtils.app"
-            BlueprintName = "FileUtils"
-            ReferencedContainer = "container:FileUtils.xcodeproj">
+            BuildableName = "FileUtilsDemo.app"
+            BlueprintName = "FileUtilsDemo"
+            ReferencedContainer = "container:FileUtilsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36157B2C1E502F0100B56FAB"
-            BuildableName = "FileUtils.app"
-            BlueprintName = "FileUtils"
-            ReferencedContainer = "container:FileUtils.xcodeproj">
+            BuildableName = "FileUtilsDemo.app"
+            BlueprintName = "FileUtilsDemo"
+            ReferencedContainer = "container:FileUtilsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
