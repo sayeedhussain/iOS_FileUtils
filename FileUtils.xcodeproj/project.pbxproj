@@ -12,15 +12,18 @@
 		36157B3B1E502F0100B56FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36157B391E502F0100B56FAB /* LaunchScreen.storyboard */; };
 		36157B541E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B511E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift */; };
 		36157B551E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B521E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift */; };
-		36157B561E502F9C00B56FAB /* FileManager+PathUtilities_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B531E502F9C00B56FAB /* FileManager+PathUtilities_Tests.swift */; };
+		36157B561E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B531E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift */; };
 		36157B6D1E5033BB00B56FAB /* FileManager+ActionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */; };
 		36157B6E1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */; };
-		36157B6F1E5033BB00B56FAB /* FileManager+PathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+PathUtilities.swift */; };
+		36157B6F1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */; };
 		36157B721E5033D000B56FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B701E5033D000B56FAB /* AppDelegate.swift */; };
 		36157B731E5033D000B56FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B711E5033D000B56FAB /* ViewController.swift */; };
 		36157B741E5033DD00B56FAB /* FileManager+ActionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */; };
 		36157B751E5033DD00B56FAB /* FileManager+DirectoryLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */; };
-		36157B761E5033DD00B56FAB /* FileManager+PathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+PathUtilities.swift */; };
+		36157B761E5033DD00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */; };
+		36430AD41E56F81300A56EF7 /* FileManager+StorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */; };
+		36430AD61E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD51E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift */; };
+		36430AD71E5700E200A56EF7 /* FileManager+StorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +47,14 @@
 		36157B501E502F9C00B56FAB /* FileUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		36157B511E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ActionUtilities_Tests.swift"; sourceTree = "<group>"; };
 		36157B521E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryLocations_Tests.swift"; sourceTree = "<group>"; };
-		36157B531E502F9C00B56FAB /* FileManager+PathUtilities_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+PathUtilities_Tests.swift"; sourceTree = "<group>"; };
+		36157B531E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DirectoryHelpers_Tests.swift"; sourceTree = "<group>"; };
 		36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+ActionUtilities.swift"; path = "Common/FileManager+ActionUtilities.swift"; sourceTree = "<group>"; };
 		36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+DirectoryLocations.swift"; path = "Common/FileManager+DirectoryLocations.swift"; sourceTree = "<group>"; };
-		36157B6C1E5033BB00B56FAB /* FileManager+PathUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+PathUtilities.swift"; path = "Common/FileManager+PathUtilities.swift"; sourceTree = "<group>"; };
+		36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+DirectoryHelpers.swift"; path = "Common/FileManager+DirectoryHelpers.swift"; sourceTree = "<group>"; };
 		36157B701E5033D000B56FAB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36157B711E5033D000B56FAB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+StorageHelpers.swift"; sourceTree = "<group>"; };
+		36430AD51E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+StorageHelpers_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +108,8 @@
 			children = (
 				36157B511E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift */,
 				36157B521E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift */,
-				36157B531E502F9C00B56FAB /* FileManager+PathUtilities_Tests.swift */,
+				36157B531E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift */,
+				36430AD51E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift */,
 				36157B471E502F0100B56FAB /* Info.plist */,
 				36157B501E502F9C00B56FAB /* FileUtilsTests-Bridging-Header.h */,
 			);
@@ -143,7 +149,8 @@
 			children = (
 				36157B6A1E5033BB00B56FAB /* FileManager+ActionUtilities.swift */,
 				36157B6B1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift */,
-				36157B6C1E5033BB00B56FAB /* FileManager+PathUtilities.swift */,
+				36157B6C1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift */,
+				36430AD31E56F81300A56EF7 /* FileManager+StorageHelpers.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -254,9 +261,10 @@
 			files = (
 				36157B731E5033D000B56FAB /* ViewController.swift in Sources */,
 				36157B721E5033D000B56FAB /* AppDelegate.swift in Sources */,
+				36430AD41E56F81300A56EF7 /* FileManager+StorageHelpers.swift in Sources */,
 				36157B6D1E5033BB00B56FAB /* FileManager+ActionUtilities.swift in Sources */,
 				36157B6E1E5033BB00B56FAB /* FileManager+DirectoryLocations.swift in Sources */,
-				36157B6F1E5033BB00B56FAB /* FileManager+PathUtilities.swift in Sources */,
+				36157B6F1E5033BB00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				36157B741E5033DD00B56FAB /* FileManager+ActionUtilities.swift in Sources */,
-				36157B561E502F9C00B56FAB /* FileManager+PathUtilities_Tests.swift in Sources */,
+				36157B561E502F9C00B56FAB /* FileManager+DirectoryHelpers_Tests.swift in Sources */,
+				36430AD71E5700E200A56EF7 /* FileManager+StorageHelpers.swift in Sources */,
 				36157B751E5033DD00B56FAB /* FileManager+DirectoryLocations.swift in Sources */,
-				36157B761E5033DD00B56FAB /* FileManager+PathUtilities.swift in Sources */,
+				36157B761E5033DD00B56FAB /* FileManager+DirectoryHelpers.swift in Sources */,
 				36157B551E502F9C00B56FAB /* FileManager+DirectoryLocations_Tests.swift in Sources */,
 				36157B541E502F9C00B56FAB /* FileManager+ActionUtilities_Tests.swift in Sources */,
+				36430AD61E5700D800A56EF7 /* FileManager+StorageHelpers_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

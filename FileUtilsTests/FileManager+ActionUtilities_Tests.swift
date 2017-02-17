@@ -25,7 +25,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         
         let path = ""
         
-        if let _ = try? FileManager.default.au_excludeBackUpOfItem(atPath: path) {
+        if let _ = try? FileManager.default.fu_setbackUpPolicyForItem(atPath: path, backUp: false) {
             XCTAssert(false)
         }
     }
@@ -34,7 +34,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         
         let path = "peekaboo"
         
-        if let _ = try? FileManager.default.au_excludeBackUpOfItem(atPath: path) {
+        if let _ = try? FileManager.default.fu_setbackUpPolicyForItem(atPath: path, backUp: false) {
             XCTAssert(false)
         }
     }
@@ -48,7 +48,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         let _ = try! FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
         
         //test
-        if let _ = try? FileManager.default.au_excludeBackUpOfItem(atPath: path) {
+        if let _ = try? FileManager.default.fu_setbackUpPolicyForItem(atPath: path, backUp: false) {
             
             var value: AnyObject? = nil
             let url = NSURL(fileURLWithPath: path)
@@ -81,7 +81,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
 
         //test
-        if let _ = try? FileManager.default.au_DeleteDirContents(atPath: path) {
+        if let _ = try? FileManager.default.fu_DeleteDirContents(atPath: path) {
             XCTAssert(false)
         }
     }
@@ -98,7 +98,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         let _ = try! "aa".write(toFile: filePath, atomically: true, encoding: .utf8)
         
         //test
-        if let _ = try? FileManager.default.au_DeleteDirContents(atPath: filePath) {//test
+        if let _ = try? FileManager.default.fu_DeleteDirContents(atPath: filePath) {//test
             try! FileManager.default.removeItem(atPath: path)//cleanup
             XCTAssert(false)
         }
@@ -115,7 +115,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         let _ = try! FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
         
         //test
-        if let _ = try? FileManager.default.au_DeleteDirContents(atPath: path) {
+        if let _ = try? FileManager.default.fu_DeleteDirContents(atPath: path) {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             let files = try! FileManager.default.contentsOfDirectory(atPath: path)
             XCTAssert(files.count == 0)//did indeed delete the contained files.
@@ -138,7 +138,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         let _ = try! "aa".write(toFile: (path as NSString).appendingPathComponent("readMe"), atomically: true, encoding: .utf8)
         
         //test
-        if let _ = try? FileManager.default.au_DeleteDirContents(atPath: path) {
+        if let _ = try? FileManager.default.fu_DeleteDirContents(atPath: path) {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             let files = try! FileManager.default.contentsOfDirectory(atPath: path)
             XCTAssert(files.count == 0)//did indeed delete the contained files.
@@ -165,7 +165,7 @@ class FileManager_ActionUtilities_Tests: XCTestCase {
         let _ = try! "aa".write(toFile: (path1 as NSString).appendingPathComponent("readMe"), atomically: true, encoding: .utf8)
         
         //test
-        if let _ = try? FileManager.default.au_DeleteDirContents(atPath: path) {
+        if let _ = try? FileManager.default.fu_DeleteDirContents(atPath: path) {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             let files = try! FileManager.default.contentsOfDirectory(atPath: path)
             XCTAssert(files.count == 0)//did indeed delete the contained files.

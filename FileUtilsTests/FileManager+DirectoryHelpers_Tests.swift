@@ -8,7 +8,7 @@
 
 import XCTest
 
-class FileManager_PathUtilities_Tests: XCTestCase {
+class FileManager_DirectoryHelpers_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,7 +22,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
     
     func testDocumentSubDir_InvalidComponentEmptyString() {
         
-        if let _ = try? FileManager.default.documentSubDir(component: "") {
+        if let _ = try? FileManager.default.fu_documentSubDir(withComponent: "") {
             XCTAssert(false)
         }
     }
@@ -35,7 +35,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
         
         //test
-        if let _ = try? FileManager.default.documentSubDir(component: "Data") {
+        if let _ = try? FileManager.default.fu_documentSubDir(withComponent: "Data") {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return
@@ -47,7 +47,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
     
     func testLibrarySubDir_InvalidComponentEmptyString() {
         
-        if let _ = try? FileManager.default.librarySubDir(component: "") {
+        if let _ = try? FileManager.default.fu_librarySubDir(withComponent: "") {
             XCTAssert(false)
         }
     }
@@ -60,7 +60,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
         
         //test
-        if let _ = try? FileManager.default.librarySubDir(component: "Data") {
+        if let _ = try? FileManager.default.fu_librarySubDir(withComponent: "Data") {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return
@@ -72,7 +72,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
 
     func testCachesSubDir_InvalidComponentEmptyString() {
         
-        if let _ = try? FileManager.default.cachesSubDir(component: "") {
+        if let _ = try? FileManager.default.fu_cachesSubDir(withComponent: "") {
             XCTAssert(false)
         }
     }
@@ -85,7 +85,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
         
         //test
-        if let _ = try? FileManager.default.cachesSubDir(component: "Data") {
+        if let _ = try? FileManager.default.fu_cachesSubDir(withComponent: "Data") {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return
@@ -101,7 +101,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         let path = paths.first!
         try? FileManager.default.removeItem(atPath: path)//clean-slate
 
-        if let _ = try? FileManager.default.applicationSupportDir() {
+        if let _ = try? FileManager.default.fu_applicationSupportDir() {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return
@@ -112,7 +112,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
     
     func testApplicationSupportSubDir_InvalidComponentEmptyString() {
         
-        if let _ = try? FileManager.default.applicationSupportSubDir(component: "") {
+        if let _ = try? FileManager.default.fu_applicationSupportSubDir(withComponent: "") {
             XCTAssert(false)
         }
     }
@@ -125,7 +125,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
         
         //test
-        if let _ = try? FileManager.default.applicationSupportSubDir(component: "Data") {
+        if let _ = try? FileManager.default.fu_applicationSupportSubDir(withComponent: "Data") {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return
@@ -137,7 +137,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
     
     func testTmpSubDir_InvalidComponentEmptyString() {
         
-        if let _ = try? FileManager.default.tmpSubDir(component: "") {
+        if let _ = try? FileManager.default.fu_tmpSubDir(withComponent: "") {
             XCTAssert(false)
         }
     }
@@ -150,7 +150,7 @@ class FileManager_PathUtilities_Tests: XCTestCase {
         try? FileManager.default.removeItem(atPath: path)//clean-slate
         
         //test
-        if let _ = try? FileManager.default.tmpSubDir(component: "Data") {
+        if let _ = try? FileManager.default.fu_tmpSubDir(withComponent: "Data") {
             XCTAssert(FileManager.default.fileExists(atPath: path))//didn't delete the dir itself
             try? FileManager.default.removeItem(atPath: path)//clean-slate
             return

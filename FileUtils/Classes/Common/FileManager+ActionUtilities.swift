@@ -13,23 +13,23 @@ extension FileManager {
     private static let FileManagerErrorDomain = "FileManagerErrorDomain"
     
     /**
-     Excludes the resource from all backups of app data. You can use this method to exclude cache and other app support 
-     files which are not needed in a backup. Backup happens on iTunes, iCloud.
+     Sets the backup policy of item at given path. You can use this method to include/exclude items based on whether they
+     need backup. Backup happens on iTunes, iCloud.
      */
-    func au_excludeBackUpOfItem(atPath path: String) throws {
+    func fu_setbackUpPolicyForItem(atPath path: String, backUp: Bool) throws {
         
         if path.isEmpty {
             throw error(withMessage: "path is empty.")
         }
         
         let url = URL(fileURLWithPath: path)
-        try (url as NSURL).setResourceValue(true, forKey: URLResourceKey.isExcludedFromBackupKey)
+        try (url as NSURL).setResourceValue(!backUp, forKey: URLResourceKey.isExcludedFromBackupKey)
     }
 
     /**
      Deletes dir contents leaving behind an empty dir.
      */
-    func au_DeleteDirContents(atPath path: String) throws {
+    func fu_DeleteDirContents(atPath path: String) throws {
         
         let _fileExists = fileExists(atPath: path)
         
@@ -38,7 +38,7 @@ extension FileManager {
             throw error(withMessage: "No dir at path.")
         }
         
-        let _isDir = au_IsDir(atPath: path)
+        let _isDir = fu_IsDir(atPath: path)
         
         if !_isDir {
             print("File at path instead of dir.")
@@ -53,7 +53,7 @@ extension FileManager {
         }
     }
     
-    private func au_IsDir(atPath path: String) -> Bool {
+    private func fu_IsDir(atPath path: String) -> Bool {
         var isDir = ObjCBool(true)
         self.fileExists(atPath: path, isDirectory: &isDir)
         return isDir.boolValue

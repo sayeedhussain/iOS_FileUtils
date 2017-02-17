@@ -22,21 +22,21 @@ class FileManager_DirectoryLocations_Tests: XCTestCase {
     
     func testHomeDir() {
         
-        let path = FileManager.default.homeDirPath()
+        let path = FileManager.default.fu_homeDir()
         
         XCTAssert(!path.isEmpty)
     }
     
     func testTmpDir() {
         
-        let path = FileManager.default.tmpDirPath()
+        let path = FileManager.default.fu_tmpDir()
         
         XCTAssert(!path.isEmpty)
     }
 
     func testDocumensDir() {
         
-        if let _ = try? FileManager.default.documentDirPath() {
+        if let _ = try? FileManager.default.fu_documentDir() {
             return
         }
         
@@ -45,7 +45,7 @@ class FileManager_DirectoryLocations_Tests: XCTestCase {
     
     func testLibraryDir() {
         
-        if let _ = try? FileManager.default.libraryDirPath() {
+        if let _ = try? FileManager.default.fu_libraryDir() {
             return
         }
         
@@ -54,7 +54,7 @@ class FileManager_DirectoryLocations_Tests: XCTestCase {
     
     func testCachesDir() {
         
-        if let _ = try? FileManager.default.cachesDirPath() {
+        if let _ = try? FileManager.default.fu_cachesDir() {
             return
         }
         
@@ -63,7 +63,7 @@ class FileManager_DirectoryLocations_Tests: XCTestCase {
     
     func testApplicationSupportDir() {
         
-        if let _ = try? FileManager.default.applicationSupportDirPath() {
+        if let _ = try? FileManager.default.fu_applicationSupportDirPath() {
             return
         }
         

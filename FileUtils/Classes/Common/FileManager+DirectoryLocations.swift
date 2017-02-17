@@ -12,59 +12,59 @@ extension FileManager {
     
     private static let FileManagerErrorDomain = "FileManagerErrorDomain"
 
-    func homeDirPath() -> String {        
+    func fu_homeDir() -> String {
         return NSHomeDirectory()
     }
 
-    func documentDirPath(domainMask mask: FileManager.SearchPathDomainMask = .userDomainMask) throws -> String {
+    func fu_documentDir() throws -> String {
 
-        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, mask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         
         if let path = paths.first {
             return path
         }
         
-        throw error(withMessage: "Failed to get Document directory.")
+        throw fu_error(withMessage: "Failed to get Document directory.")
     }
 
-    func tmpDirPath() -> String {
+    func fu_tmpDir() -> String {
         return NSTemporaryDirectory()
     }
 
-    func libraryDirPath(domainMask mask: FileManager.SearchPathDomainMask = .userDomainMask) throws -> String {
+    func fu_libraryDir() throws -> String {
         
-        let paths = NSSearchPathForDirectoriesInDomains(.libraryDirectory, mask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(.libraryDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         
         if let path = paths.first {
             return path
         }
         
-        throw error(withMessage: "Failed to get Library directory.")
+        throw fu_error(withMessage: "Failed to get Library directory.")
     }
 
-    func cachesDirPath(domainMask mask: FileManager.SearchPathDomainMask = .userDomainMask) throws -> String {
+    func fu_cachesDir() throws -> String {
         
-        let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, mask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         
         if let path = paths.first {            
             return path
         }
         
-        throw error(withMessage: "Failed to get Library/Caches directory.")
+        throw fu_error(withMessage: "Failed to get Library/Caches directory.")
     }
     
-    func applicationSupportDirPath(domainMask mask: FileManager.SearchPathDomainMask = .userDomainMask) throws -> String {
+    func fu_applicationSupportDirPath() throws -> String {
         
-        let paths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, mask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
         
         if let path = paths.first {
             return path
         }
         
-        throw error(withMessage: "Failed to get Library/ApplicationSupport directory.")
+        throw fu_error(withMessage: "Failed to get Library/ApplicationSupport directory.")
     }
 
-    private func error(withMessage message: String) -> Error {
+    private func fu_error(withMessage message: String) -> Error {
         return NSError(domain: FileManager.FileManagerErrorDomain, code: 0, userInfo: [NSLocalizedDescriptionKey: message])
     }
     
